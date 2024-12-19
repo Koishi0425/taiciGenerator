@@ -1,18 +1,24 @@
 {
-  "name": "taici-editor",
+  "name": "taiciGenerator",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "让你的人物照片说一些台词！",
   "dependencies": {
     "vite": "^6.0.4"
   },
   "devDependencies": {
-    "typescript": "^5.7.2"
+    "gh-pages": "^6.2.0",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.4"
   }
 }
