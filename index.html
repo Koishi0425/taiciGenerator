@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>台词生成/TAICI Generator</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>台词生成/TAICI Generator</h1>
+            <div class="input-group">
+                <label for="imageUpload">上传图片</label>
+                <input type="file" id="imageUpload" accept="image/*">
+            </div>
+            <div class="input-group">
+                <label for="textInput">输入台词(每行一条)</label>
+                <textarea id="textInput" rows="10" style="width: 100%;"></textarea>
+            </div>
+            <div class="input-group">
+                <label for="fontSize">字体大小(px) </label>
+                <input type="number" id="fontSize" value="24">
+            </div>
+            <button id="downloadBtn">下载</button>
+            <canvas id="imageCanvas"></canvas>
+
+        </div>
+        <script src="./canvas.ts" type="module"></script>
+    </body>
+</html>
